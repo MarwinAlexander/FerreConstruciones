@@ -60,12 +60,58 @@
         .fa-clock:before{content:"\f017"}
         .fa-envelope:before{content:"\f0e0"}
         .fa-facebook-f:before{content:"\f39e"}
-        .fa-instagram:before{content:"\f16d"}
         .fa-map-marker-alt:before{content:"\f3c5"}
         .fa-phone-alt:before{content:"\f879"}
         .fa-search:before{content:"\f002"}
         .fa-tools:before{content:"\f7d9"}
-        
+
+        .whatsapp-button {
+    display: inline-block;
+    background-color: #25D366; /* Color */
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Efecto al pasar el ratón */
+    margin: 5px;
+}
+
+         .whatsapp-button:hover {
+    background-color: #1DA851; /* Color más oscuro */
+}
+
+        .whatsapp-button img {
+    vertical-align: middle; /* Alinea el icono con el texto */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+}
+
+       .facebook-button {
+    display: inline-block;
+    background-color: #4c99ff; /* Color */
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Efecto al pasar el ratón */
+    margin: 5px;
+}
+
+         .facebook-button:hover {
+    background-color: #1d49a8; /* Color más oscuro */
+}
+
+        .facebook-button img {
+    vertical-align: middle; /* Alinea el icono con el texto */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+}
         /* Utilidades */
         .flex {
             display: flex;
@@ -502,7 +548,7 @@
         
         /* Estilos para botones secundarios (fondo claro, texto verde) */
         .btn-secondary {
-            
+            background-color: var(--moss-100);
             color: var(--moss-500);
             transition: background-color 0.3s ease;
         }
@@ -667,13 +713,13 @@
         }
         
                 /* ========== ESTILOS GENERALES RESPONSIVOS ========== */
-        @media (max-width: 901px) {
+        @media (max-width: 1024px) {
             .product-scroll-item {
                 width: calc(33.333% - 1.5rem);
             }
         }
         
-        @media (max-width: 601px) {
+        @media (max-width: 1024px) {
             .product-scroll-item {
                 width: calc(50% - 1.5rem);
             }
@@ -717,7 +763,7 @@
             }
         }
         
-        @media (max-width: 600px) {
+        @media (max-width: 1024px) {
             .product-scroll-item {
                 width: calc(100% - 1.5rem);
             }
